@@ -1,0 +1,59 @@
+@import './common/common.scss';
+
+/*登陆*/
+.welcome_title{font:22px/85px "Microsoft YaHei", "微软雅黑"; color:#333; float:left; padding-left:24px;}
+.loginBox{width:350px; padding: 6px; background: rgba(255,255,255,0.5); margin:40px auto; position:relative; margin-right: 40px;}
+.login_con {
+	padding: 5px;
+	background: url(../images/login_bg.jpg) center;
+}
+.login_cont{padding:35px 25px; background: #fff; }
+.login_cont {
+	.to_cus {
+		display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;
+		margin-bottom: 12px;
+		a{ color: $clMain;}
+	}
+	 .title {
+		font-size: 20px;
+	}
+	.mb_10 {
+		margin-bottom: 25px;
+	}
+}
+.l_tit{color:#666; line-height:20px;}
+.login_input{border:#ccc solid 1px; height:32px; line-height:32px\9; text-indent:5px; width:100%;}
+.user_icon{background:url(../images/icon/user_icon.jpg) right center no-repeat;border-radius:3px;}
+.code_icon{background:url(../images/icon/code_icon.png)  right 10px center no-repeat;border-radius:3px;}
+.mb_10{margin-bottom:10px;}
+.autoLogin{padding-bottom:15px;}
+.checked{position:relative; top:3px; margin-right:3px;}
+.loginBox .login_btn{width:309px; height:40px; background: $clMain; color: #fff; font-size:16px; font-weight: bold;border-radius: 3px;}
+.login_partners{padding-top:34px;}
+.login_list li{float:left; line-height:20px;}
+.login_list span{color:#999; margin:0 2px;}
+.reg_link{width:115px; height:31px; background:url(../images/icon/red_link.jpg) left top no-repeat; position:absolute; right:0; bottom:-31px;}
+.regBox{margin:40px auto; border:#CCC solid 1px; text-align: center;}
+.reg_item{font:14px/34px "宋体"; width:85px; text-align:right;display: inline-block;}
+.reg_item i{color:red; font-style:normal; margin-right:5px;}
+.input_item{width:340px; display: inline-block;
+	&.code_input {
+		width: 160px;
+		margin-right: 18px;
+	}
+}
+.vCode {
+	display: inline-block;
+}
+.regBox {background:#fff;}
+.regBox li{height:60px; vertical-align:top;}
+.regBox .autoLogin{height:46px; padding:0;}
+.regBox .login_cont{padding:45px 76px 20px 76px;}
+.login_cont .resigter_btn {
+	width: 306px;
+	text-align: center;
+	line-height: 36px;
+	background: $clMain;
+	color: #fff;
+	font-size: 16px;
+}

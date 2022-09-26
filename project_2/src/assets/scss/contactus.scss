@@ -1,0 +1,68 @@
+@import './common/common.scss';
+#main, .contact_main {
+    background: #fff
+}
+.contact_main {
+    padding: 36px 2.5%;
+    box-sizing: border-box;
+    margin: auto;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around
+}
+.contact_main .item {
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background: #cf1132;
+    background: radial-gradient(#e34259, #cf1132);
+    margin: 0 30px;
+    color: #fff;
+    text-align: center
+}
+.contact_main .item:nth-child(5) {
+    margin-top: -53px
+}
+.contact_main .item .content {
+    width: 200px;
+    height: 200px;
+    padding: 24px;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    white-space: nowrap
+}
+.contact_main .item .content:after {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle
+}
+.contact_main .item .content .icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto
+}
+.contact_main .item .content .icon.icon_company {
+    background: url("../image/contact_icon_1.png") no-repeat;
+    background-size: contain;
+}
+.contact_main .item .content .icon.icon_loc {
+    background: url("../image/contact_icon_2.png") no-repeat;
+    background-size: contain;
+}
+.contact_main .item .content .icon.icon_money {
+    background: url("../image/contact_icon_3.png") no-repeat;
+    background-size: contain;
+}
+.contact_main .item .content .icon.icon_person {
+	background: url("../image/contact_icon_4.png") no-repeat;
+    background-size: contain;
+}
+.contact_main .item .content .icon.icon_phone {
+	background: url("../image/contact_icon_5.png") no-repeat;
+    background-size: contain;
+}

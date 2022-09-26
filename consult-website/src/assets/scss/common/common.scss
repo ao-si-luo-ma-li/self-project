@@ -1,0 +1,226 @@
+@import '../_tool/_variable.scss';
+@import '../_tool/_other.scss';
+
+/* nav */
+
+
+/* footer */
+
+
+/* 字体 */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fa-map-marker:before {
+  content: "\f041"
+}
+
+.fa-calendar:before {
+  content: "\f073"
+}
+
+
+/* 侧边栏 */
+.menu-right-expand .dropdown-menu {
+  left: 100%;
+  top: 0;
+
+  li {
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  a {
+    background: #fff !important;
+
+    &:hover {
+      color: #fff !important;
+      background: #005ca1 !important;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.sidebar {
+  float: left;
+  width: 250px;
+  padding: 30px 0
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .sidebar {
+      width:200px
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+      display:none
+  }
+}
+
+.sidebar .widget_nav_menu {
+  padding: 0;
+  background: #eee;
+  border-radius: 3px;
+  border: 0
+}
+
+.sidebar .widget_nav_menu .widget-title {
+  padding-left: 30px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 50px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.sidebar .widget_nav_menu .widget-title span {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  border: 0
+}
+
+.sidebar .widget_nav_menu ul li {
+  position: relative;
+  padding: 0;
+  line-height: 40px;
+  border-bottom: 1px solid #e5e5e5
+}
+
+.sidebar .widget_nav_menu ul li li {
+  padding-left: 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 0
+}
+
+.sidebar .widget_nav_menu ul li li a {
+  padding-left: 45px
+}
+
+.sidebar .widget_nav_menu ul li li a:after {
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #666
+}
+
+.sidebar .widget_nav_menu ul li li a:hover:after {
+  color: #fff
+}
+
+.sidebar .widget_nav_menu ul li li li a {
+  padding-left: 60px
+}
+
+.sidebar .widget_nav_menu ul li li li a:after {
+  left: 50px
+}
+
+.sidebar .widget_nav_menu ul li li li a:hover:after {
+  color: #fff
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item a,.sidebar .widget_nav_menu ul li.current-post-parent a {
+  color: #fff;
+  background: #08c
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item a:after,.sidebar .widget_nav_menu ul li.current-post-parent a:after {
+  color: #fff
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item .sub-menu a,.sidebar .widget_nav_menu ul li.current-post-parent .sub-menu a {
+  background: none
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item .sub-menu a:after,.sidebar .widget_nav_menu ul li.current-post-parent .sub-menu a:after {
+  color: #666
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item .sub-menu a:hover,.sidebar .widget_nav_menu ul li.current-post-parent .sub-menu a:hover {
+  color: #fff;
+  background: #07c
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item .sub-menu a:hover:after,.sidebar .widget_nav_menu ul li.current-post-parent .sub-menu a:hover:after {
+  color: #fff
+}
+
+.sidebar .widget_nav_menu ul li.current-menu-item li a,.sidebar .widget_nav_menu ul li.current-post-parent li a {
+  color: #333
+}
+
+.sidebar .widget_nav_menu ul li a {
+  display: block;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #333
+}
+
+.sidebar .widget_nav_menu ul li a:hover {
+  color: #fff;
+  background: #07c
+}
+
+/* 富文本样式 */
+.entry {
+  margin-top: 20px
+}
+
+@media (max-width: 767px) {
+  .entry {
+      font-size:16px
+  }
+}
+
+.entry {
+  .entry-content {
+    line-height: 1.8;
+    font-size: 16px;
+  
+    li {
+      list-style: initial;
+      margin-left: 18px;
+    }
+  }
+}
+
+
+.entry .entry-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.4;
+  text-align: center
+}
+
+@media (max-width: 991px) {
+  .entry .entry-title {
+      font-size:24px;
+      margin: 20px 0
+  }
+}
+
+@media (max-width: 767px) {
+  .entry .entry-title {
+      font-size:20px;
+      margin: 15px 0
+  }
+}
+
+.entry .entry-content p {
+  margin-bottom: 20px
+}

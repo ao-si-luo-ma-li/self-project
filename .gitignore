@@ -1,0 +1,15 @@
+**/node_modules
+# package-lock.json
+
+**/build
+*.zip
+
+**/.DS_Store
+*.DS_Store
+.DS_Store*
+
+**/.history
+
+# yarn
+**/yarn.lock
+**/yarn-error.log

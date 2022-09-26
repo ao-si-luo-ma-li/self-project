@@ -1,0 +1,48 @@
+@import './common/common.scss';
+
+.inner-banner {
+  background: #000 url('../images/about_banner.jpg') no-repeat left center;
+  height: 260px;
+  background-size: cover;
+}
+
+.maincontent {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: auto;
+  .h2-title {
+    position: relative;
+    display: inline-block;
+    margin: 44px 0;
+    font-size: 40px;
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      background: #ccc;
+    }
+    &::after, {
+      left: 105%;
+    }
+    &::before {
+      right: 105%;
+    }
+  }
+  .intro-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-size: 18px;
+    line-height: 40px;
+    background: #f2f2f2;
+    p {
+      margin-bottom: 10px;
+      &::first-letter {
+        font-size: 28px;
+        color: #f7a300;
+      }
+    }
+  }
+}

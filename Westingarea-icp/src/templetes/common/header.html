@@ -1,0 +1,118 @@
+<div id="header" class="">
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<div class="index_wrapper_1353">
+		<div class="header_top">
+			<div class="headerTop">
+			</div>
+			<a class="header_icon header_user_icon" href="/account/"></a>
+			<a class="header_icon header_search_icon" href="javascript:void(0);">
+				<div class="search_box">
+					<form class="search" action="/search/" method="get">
+						<input autocomplete="off" disableautocomplete="" type="text" class="fl" name="Keyword" placeholder="Search"
+							notnull="">
+						<input type="submit" class="fr" value="">
+						<div class="clear"></div>
+					</form>
+				</div>
+			</a>
+		</div>
+		<div class="header_bot header_nav">
+			<h1 class="logo fl pic_box"><a href="./index.html"><div class="logo"></div><em></em></a>
+			</h1>
+			<div class="header_nav_right">
+				<div class="header_nav_items">
+					<div class="default_nav_style">
+						<div class="n_item">
+							<a href="./index.html" title="Home">Home</a>
+						</div>
+						<div class="n_item has_sec" style="position: relative; overflow: visible;">
+							<a href="product.html" title="Products">Products</a>
+							<div class="nav_sec small_nav_sec" style="display: none; opacity: 0; margin-top: 30px;">
+								<div class="top"></div>
+								<div class="nav_sec_box">
+									<div class="">
+										<div id="nav_sec_3" class="nav_list">
+											<dl class="nav_sec_item">
+												<dt>
+													<a class="nav_sec_a" href="javascript:;" title="Interior">
+														Interior <em></em> </a>
+												</dt>
+												<dd class="nav_thd_list">
+													<div class="nav_thd_item">
+														<a href="./product1.html" title="Wilwood">
+															Wilwood </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="nav_sec_item">
+												<dt>
+													<a class="nav_sec_a" href="javascript:;" title="Exterior">
+														Exterior <em></em> </a>
+												</dt>
+												<dd class="nav_thd_list">
+													<div class="nav_thd_item">
+														<a href="./product2.html" title="Braum">
+															Braum </a>
+													</div>
+													<div class="nav_thd_item">
+														<a href="./product3.html" title="KSport">
+															KSport </a>
+													</div>
+												</dd>
+											</dl>
+											<div class="clear"></div>
+										</div>
+										<div class="nav_img ">
+											<div class="clear"></div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="n_item has_sec" style="position: relative; overflow: visible;">
+							<a href="case.html" title="Case">Case</a>
+						</div>
+						<div class="n_item has_sec" style="position: relative; overflow: visible;">
+							<a href="./about.html" title="About Us">About Us</a>
+						</div>
+						<div class="n_item">
+							<a href="./news.html" title="News">News</a>
+						</div>
+					</div>
+
+					<script>
+						$('.small_nav_sec').parent().css({
+							'position': 'relative',
+							'overflow': 'visible'
+						});
+						$('.default_nav_style .n_item').hover(function () {
+							$this = $(this);
+							$this.find('.nav_sec').show().animate({
+								'opacity': '1',
+								'margin-top': 0
+							}, 200);
+							if (!$this.find('.nav_sec').hasClass('small_nav_sec')) {
+								$this.find('.nav_list>.clear').remove();
+								$eq = parseInt(($this.find('.nav_sec_box').width() - $this.find('.nav_img').outerWidth(true)) / $this
+									.find('.nav_sec_item').outerWidth(true));
+								$this.find('.nav_sec_item').each(function (index) {
+									if (index % $eq == ($eq - 1)) {
+										$(this).after('<div class="clear"></div>');
+									}
+								});
+							}
+						}, function () {
+							$this = $(this);
+							$this.find('.nav_sec').animate({
+								'opacity': '0',
+								'margin-top': '30px'
+							}, 0).hide();
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bxSlide-outter"><div class="outter-banner"></div></div>

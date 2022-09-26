@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登陆</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body style="display: none;">
+    <% include common/header.html %>
+
+    <div class="content-main">
+        <div class="login_con">
+            <div class="comWidth">
+                <div class="loginBox">
+                    <div class="login_cont">
+                        <div class="to_cus">
+                            <span class="title">会员登录</span>
+                            <span class="tip">没有账号？<a href="./resigter.html">马上免费注册</a></span>
+                        </div>
+                        <ul class="login">
+                            <li class="mb_10">
+                                <input type="text" class="login_account login_input user_icon" placeholder="邮箱/用户名/手机号">
+                            </li>
+                            <li class="mb_10">
+                                <input type="password" class="login_password login_input code_icon" placeholder="密码">
+                            </li>
+                            <li class="autoLogin">
+                                <input type="checkbox" id="a1" class="checked">
+                                <label for="a1">自动登陆</label>
+                            </li>
+                            <li>
+                                <input type="button" value="登录" class="login_btn">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include common/footer.html %>
+</body>
+
+</html>

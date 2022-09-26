@@ -1,0 +1,7 @@
+FROM nginx:lastest
+
+MAINTAINER cctv130111@outlook.com
+
+COPY dist /usr/share/nginx/html/
+
+CMD ["nginx", "-g", "damemon off;"]

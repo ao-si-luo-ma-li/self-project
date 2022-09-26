@@ -1,0 +1,286 @@
+@import './common/common.scss';
+
+#main:after {
+    display: none
+}
+#pro1_main {
+    margin-top: 45px
+}
+#pro1_game ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center
+}
+#pro1_game li {
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1200px;
+    perspective: 1200px
+}
+#pro1_game li, #pro1_game li .game_pic {
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s
+}
+#pro1_game li .game_pic {
+    width: 600px;
+    height: 400px
+}
+#pro1_game li .game_pic .img {
+    width: 100%;
+    height: 100%
+}
+#pro1_game li .game_body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s
+}
+#pro1_game li .game_body .title {
+    display: block;
+    margin: 15px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #cf1132
+}
+#pro1_game li .game_body .deck {
+    text-indent: 25px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #666
+}
+#pro1_game li .game_body .go {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 160px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #666;
+    background: #cf1132;
+    color: #fff;
+    border-color: #cf1132;
+    position: relative
+}
+#pro1_game li .game_body .go, #pro1_game li .game_body .go:after {
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s
+}
+#pro1_game li .game_body .go:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    right: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg)
+}
+#pro1_game li:hover .game_pic {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+#pro1_game li:hover .game_body {
+    -webkit-transform: rotateY(1turn);
+    transform: rotateY(1turn)
+}
+#pro1_game .game_1 .img {
+    background: url("../image/game_1.jpg") no-repeat 50%;
+    background-size: cover
+}
+#pro1_game .game_2 .img {
+    background: url("../image/game_2.jpg") no-repeat 50%;
+    background-size: cover
+}
+#pro1_game .game_3 .img {
+    background: url("../image/game_3.jpg") no-repeat 50%;
+    background-size: cover
+}
+#pro1_game .game_4 .img {
+    background: url("../image/game_4.jpg") no-repeat 50%;
+    background-size: cover
+}
+.pro1-con-box-title {
+    position: relative;
+    font-size: 24px;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    color: #fff
+}
+.pro1-con-box-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    background: url("../image/gc_title_1.png") no-repeat 50%;
+    background-size: contain
+}
+#game_banner .item {
+    height: 600px;
+    background: #000 url("../image/in_banner.jpg") no-repeat
+}
+#game_banner .center {
+    height: 500px;
+    width: 1200px;
+    overflow: hidden
+}
+#game_banner #demo {
+    margin-top: 40px
+}
+#game_banner #game_1 {
+    background: url("../image/game_1.jpg") no-repeat 50%;
+    background-size: cover
+}
+#game_banner #game_2 {
+    background: url("../image/game_2.jpg") no-repeat 50%;
+    background-size: cover
+}
+#game_banner #game_3 {
+    background: url("../image/game_3.jpg") no-repeat 50%;
+    background-size: cover
+}
+#game_banner #game_4 {
+    background: url("../image/game_4.jpg") no-repeat 50%;
+    background-size: cover
+}
+#game_banner .slide-3d .item-list li {
+    width: 750px;
+    height: 500px;
+    transition: all .5s ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+#game_banner .slide-3d .item-list li .name {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s
+}
+#game_banner .slide-3d .item-list li.item0 {
+    transform: translate3d(-225px, 0, 0) scale(.8)
+}
+#game_banner .slide-3d .item-list li.item1 {
+    transform: translateZ(0) scale(.8);
+    transform-origin: 0 50%;
+    opacity: 1;
+    z-index: 2
+}
+#game_banner .slide-3d .item-list li.item2 {
+    transform: translate3d(225px, 0, 0) scale(1);
+    transform-origin: 0 50%;
+    opacity: 1;
+    z-index: 3
+}
+#game_banner .slide-3d .item-list li.item2:hover .name {
+    bottom: 0
+}
+#game_banner .slide-3d .item-list li.item3 {
+    transform: translate3d(450px, 0, 0) scale(.8);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    z-index: 2
+}
+#game_banner .slide-3d .item-list li.item4 {
+    transform: translate3d(675px, 0, 0) scale(.8)
+}
+#game_banner .slide-carousel .indicator-list a.selected {
+    border-color: #cf1132;
+    background-color: #fff
+}
+#full-list {
+    height: 600px;
+    position: relative
+}
+#full-list .item {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    padding-bottom: 50%;
+    overflow: hidden
+}
+#full-list .item.active .content {
+    top: 0;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+#full-list .item.game_1 {
+    background: url("../image/game_1.jpg") no-repeat 50%;
+    background-size: cover
+}
+#full-list .item.game_2 {
+    background: url("../image/game_2.jpg") no-repeat 50%;
+    background-size: cover
+}
+#full-list .item.game_3 {
+    background: url("../image/game_3.jpg") no-repeat 50%;
+    background-size: cover
+}
+#full-list .item.game_4 {
+    background: url("../image/game_4.jpg") no-repeat 50%;
+    background-size: cover
+}
+#full-list .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    white-space: nowrap;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s
+}
+#full-list .content .title {
+    font-size: 24px;
+    margin-bottom: 10px
+}
+#full-list .content .text {
+    max-width: 70%;
+    margin: auto
+}
+#full-list .content:after {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle
+}

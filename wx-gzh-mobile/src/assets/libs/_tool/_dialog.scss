@@ -1,0 +1,75 @@
+@import './other.scss';
+// 正在加载弹窗，缩放比例为2
+.broadcast {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    z-index: 11;
+    font-size: 0;
+    .maskCenter {
+        display: inline-block;
+        vertical-align: middle;
+        width: toRem(120px);
+        height: toRem(120px);
+        margin-top: toRem(-90px);
+        background: rgba(0,0,0,0.6);
+        padding: toRem(10px);
+        border-radius: toRem(6px);
+        box-sizing: border-box;
+    }
+    &:after {
+        content: '';
+        height: 100%;
+        width: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    p {
+        text-align: center;
+        font-size: toRem(14px);
+        color: #fff;
+    }
+}
+
+// 遮罩弹窗效果
+.shade,.winShade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9;
+    display: none;
+}
+.my_confirm {
+    position: fixed;
+    width: toRem(341px);
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: toRem(-100px);
+    padding: toRem(35px) toRem(20px) toRem(15px) toRem(20px);
+    font-size: toRem(16px);
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: toRem(4px);
+    z-index: 10;
+    @include box_shadow(0px,0px,10px,0px,#aaa);
+    .my_btn {
+        margin-top: toRem(35px);
+        text-align: right;
+        button {
+            font-size: toRem(16px);
+            padding: toRem(5px);
+        }
+        .confirm {
+            color: #FEDA02;
+        }
+    }
+}

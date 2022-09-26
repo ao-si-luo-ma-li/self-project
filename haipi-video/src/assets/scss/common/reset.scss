@@ -1,0 +1,217 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	outline: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font: 400 14px/1.5 Arial, "Lucida Grande", Verdana, "Microsoft YaHei", hei;
+}
+
+body {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.5;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	display: block !important;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+a {
+	background: transparent;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	color: #3696F1;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+a:active {
+	outline: 0;
+}
+
+input {
+	line-height: normal;
+	border: none;
+	border: 1px solid #000
+}
+
+input:focus {
+	outline: 0 none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #ccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #ccc;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #ccc;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+a,
+button,
+input {
+	box-shadow: none;
+	outline: 0;
+}
+
+.clearfix:after {
+	display: block;
+	height: 0;
+	content: '';
+	clear: both;
+}
+
+.center {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+button {
+	padding: 0;
+	border: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-size: 12px;
+	background: #fff;
+	position: relative;
+}
+
+.right_red {
+	color: red !important;
+}
+
+input,
+select,
+textarea {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+	color: #656565;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+
+/*清浮动*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}

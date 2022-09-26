@@ -1,0 +1,96 @@
+@import './_tool/_font.scss';
+/*遮罩层样式*/
+$body_w: 1920px;
+$menuLeft_w: 265px;
+$menuRight_w: 1655px;
+$clMain : #8cc7e1;
+$clMain_win : #EFEFEF;
+$clMainB : #16A4B0;
+$clMainA : #4383BD;
+$clfff: #fff;
+$font16: 16px;
+$font14: 14px;
+$font12: 12px;
+$bgColor: #F4F5F6;
+$htmlFont: 14.0625px;
+
+@mixin posType($position: absolute,$left: 0, $right: 0, $top: 0, $bottom: 0) {
+    position: $position;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+}
+@mixin transtioned($t: 300ms, $target: all, $type: ease-in-out) {
+    -webkit-transition: $target $t $type;
+    -o-transition: $target $t $type;
+    transition: $target $t $type;
+}
+
+@mixin maxContent($line:3) {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin isOpacity($deg) {
+    opacity: $deg;
+    filter: alpha(opacity=$deg * 100);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=$deg * 100);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=$deg * 100)';
+}
+
+@mixin imageCenter() {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+@mixin textOverflow($maxW) {
+    max-width: $maxW;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin flex($just: space-around, $align: center) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: wrap;
+}
+@mixin dis_flex($just: space-between, $align: center) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: wrap;
+}
+@mixin user_select($type:none) {
+    -moz-user-select: $type;/*火狐*/
+    -webkit-user-select: $type;/*webkit浏览器*/
+    -ms-user-select: $type;/*IE10*/
+    -khtml-user-select: $type;/*早期浏览器*/
+    user-select: $type;
+}
+@mixin linearGradient($color1,$color2) {
+    background: linear-gradient(to right, $color1, $color2); 
+    background: -webkit-linear-gradient(to right, $color1, $color2); 
+    background: -o-linear-gradient(to right, $color1, $color2); 
+    background: -moz-linear-gradient(to right, $color1, $color2);
+}
+
+@function cal($child_w, $parent_w) {  
+  @return $child_w / $parent_w * 100%;
+}
+
+@function toRem($fontSize) {
+    @return $fontSize / $htmlFont / 2 * 1rem;
+}

@@ -1,0 +1,314 @@
+@import './common/common.scss';
+.bread-line .center {
+    padding-left: 7px;
+    box-sizing: border-box;
+    border-left: 3px solid #fff
+}
+.recharge-page {
+    padding: 36px 2.5%;
+    box-sizing: border-box;
+    background: #fff;
+    margin: auto
+}
+.recharge-page .re_tab {
+    float: right;
+    width: 20%;
+    box-sizing: border-box;
+    background: #f0f0f0
+}
+.recharge-page .re_intro {
+    padding: 15px
+}
+.recharge-page .re_intro .title {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd
+}
+.recharge-page .re_intro .title span {
+    display: inline-block;
+    position: relative
+}
+.recharge-page .re_intro .title span:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    margin-right: 5px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background: url("../image/tip_icon.png") no-repeat;
+    background-size: contain
+}
+.recharge-page .re_intro ol {
+    counter-reset: li
+}
+.recharge-page .re_intro ol li {
+    padding-left: 10px;
+    position: relative;
+    font-size: 12px;
+    color: #818181;
+    margin-bottom: 10px
+}
+.recharge-page .re_intro ol li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    color: #cf1132
+}
+.recharge-page .re_intro ol li:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 16px;
+    width: 7px;
+    height: 1px;
+    background: #cf1132
+}
+.recharge-page .re_main {
+    float: left;
+    width: 80%;
+    position: relative
+}
+.recharge-page .re_main:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #f0f0f0
+}
+.recharge-page .re_main .for_pay {
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    height: 60px;
+    line-height: 60px
+}
+.recharge-page .re_main .payType {
+    padding-top: 5px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd
+}
+.recharge-page .re_main .payType li {
+    width: 192px;
+    display: inline-block;
+    background: #f0f0f0;
+    position: relative;
+    border: 1px solid #ddd
+}
+.recharge-page .re_main .payType li.active {
+    background: #fff;
+    right: -1px
+}
+.recharge-page .re_main .payType li a {
+    height: 60px;
+    display: block
+}
+.recharge-page .re_main .payType li a.zfb {
+    background: url("../image/pay_logo.png") no-repeat;
+    background-position: 61px -58px
+}
+.recharge-page .re_main .payType li a.bank {
+    background: url("../image/pay_logo.png") no-repeat;
+    background-position: 61px 0
+}
+.recharge-page .re_main .payType li a.wx {
+    background: url("../image/pay_logo.png") no-repeat;
+    background-position: 61px -482px
+}
+.recharge-page .re_content .whatC {
+    margin-bottom: 20px
+}
+.recharge-page .re_content .whatC span {
+    color: #cf1132
+}
+.recharge-page .re_content .tip {
+    font-size: 12px;
+    color: #818181;
+    margin-bottom: 8px
+}
+.recharge-page .re_content .tabContent {
+    position: relative;
+    padding: 40px 50px 0;
+    display: none
+}
+.recharge-page .re_content .tabContent:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #ddd;
+    left: 0;
+    top: -1px
+}
+.recharge-page .re_content .tabContent:first-child {
+    display: block
+}
+.recharge-page .re_content .line {
+    margin-bottom: 15px
+}
+.recharge-page .re_content .line .chose, .recharge-page .re_content .line .intro {
+    display: inline-block;
+    vertical-align: top
+}
+.recharge-page .re_content .line .intro {
+    height: 30px;
+    line-height: 30px;
+    width: 105px;
+    text-align: right;
+    padding-right: 15px
+}
+.recharge-page .re_content .line .game-server, .recharge-page .re_content .line input {
+    width: 160px;
+    height: 30px;
+    padding: 5px;
+    border-color: #ccc;
+    box-sizing: border-box
+}
+.recharge-page .re_content .line .game-server:focus, .recharge-page .re_content .line input:focus {
+    box-shadow: inset 0 0 2px .5px #ddd
+}
+.recharge-page .re_content .line .percent {
+    line-height: 30px
+}
+.recharge-page .re_content .line .c_server {
+    position: relative
+}
+.recharge-page .re_content .line .c_server:hover span {
+    color: #999
+}
+.recharge-page .re_content .line .bank_list {
+    max-width: 650px
+}
+.recharge-page .re_content .line .bank_list li {
+    float: left;
+    width: 150px;
+    height: 44px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative
+}
+.recharge-page .re_content .line .bank_list li .bg_bank {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    white-space: nowrap
+}
+.recharge-page .re_content .line .bank_list li .bg_bank:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%
+}
+.recharge-page .re_content .line .bank_list li .bg_bank span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 146px;
+    height: 36px
+}
+.recharge-page .re_content .line .bank_list li.active .bg_bank, .recharge-page .re_content .line .bank_list li:hover .bg_bank {
+    border: 2px solid #cf1132
+}
+.recharge-page .re_content .line .bank_list li.bank01 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -578px
+}
+.recharge-page .re_content .line .bank_list li.bank02 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -74px
+}
+.recharge-page .re_content .line .bank_list li.bank03 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -290px
+}
+.recharge-page .re_content .line .bank_list li.bank04 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -182px
+}
+.recharge-page .re_content .line .bank_list li.bank05 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -542px
+}
+.recharge-page .re_content .line .bank_list li.bank06 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -218px
+}
+.recharge-page .re_content .line .bank_list li.bank07 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -254px
+}
+.recharge-page .re_content .line .bank_list li.bank08 span {
+    background: url("../image/banks.png") no-repeat;
+    background-position: 0 -470px
+}
+.recharge-page .re_content .line .submit {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    background: #cf1132;
+    color: #fff;
+    margin-top: 10px
+}
+.recharge-page .re_content .line table td {
+    height: 34px;
+    width: 100px;
+    padding-left: 10px;
+    color: #666;
+    border: 1px solid #ccc;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer
+}
+.recharge-page .re_content .line table td.active, .recharge-page .re_content .line table td:hover {
+    border: 2px solid #cf1132
+}
+.recharge-page .re_content .line table input {
+    padding: 0 2px;
+    width: 60px;
+    height: 26px;
+    margin-right: 5px;
+    box-sizing: border-box
+}
+.recharge-page .re_content form {
+    margin-left: 20px;
+    font-size: 12px
+}
+.recharge-page .re_content .attention {
+    margin-top: 50px;
+    margin-left: -50px
+}
+.recharge-page .re_content .attention .a_text {
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    background: #cf1132;
+    color: #fff;
+    margin-right: 10px
+}
+.recharge-page .re_content .attention .a_list {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px
+}
+.recharge-page .re_content .attention .a_list, .recharge-page .re_content .attention .a_text {
+    display: inline-block;
+    vertical-align: middle
+}

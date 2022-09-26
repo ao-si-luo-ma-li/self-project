@@ -1,0 +1,54 @@
+.logo {
+  a {
+    display: inline-block;
+    height: 60px;
+    width: 250px;
+    background: url(../images//logo.png) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.show-info-img {
+  height: 530px;
+  background: url(../images/one-2.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.show-apple {
+  height: 250px;
+  background: url(../images/apple.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.show-veg {
+  height: 250px;
+  background: url(../images/veg.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.show-fd {
+  height: 300px;
+  background: url(../images/fd-btm1.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.care-bottom {
+  .tree, .tree-1, .tree-2 {
+    width: 93px;
+    height: 93px;
+    margin: 0 auto;
+  }
+  
+  .tree {
+    background: url(../images/tree.png) no-repeat center;
+    background-size: contain;
+  }
+  .tree-1 {
+    background: url(../images/tree-1.png) no-repeat center;
+    background-size: contain;
+  }
+  .tree-2 {
+    background: url(../images/tree-2.png) no-repeat center;
+    background-size: contain;
+  }
+}

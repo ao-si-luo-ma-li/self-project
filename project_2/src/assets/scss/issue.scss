@@ -1,0 +1,32 @@
+@import './common/common.scss';
+
+#main {
+	background: #fff;
+}
+.issue_main {
+	max-width: 1080px;
+    padding: 40px 3%;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px 0.5px #ddd;
+    margin: auto;
+	h2 {
+		text-align: center;
+		font-size: 34px;
+		padding-bottom: 15px;
+	}
+	.title {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 10px 0;
+	}
+	.s_title {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 8px 0;
+	}
+	p {
+		text-indent: 25px;
+		line-height: 25px;
+	}
+}

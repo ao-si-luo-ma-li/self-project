@@ -1,0 +1,87 @@
+@import './const.scss';
+html{
+	height: 100%;
+	background: #f0f0f2;
+}
+.fontS14 { font-size: $font14!important; }
+.fontS16 { font-size: $font16!important; }
+.fontS18 { font-size: 18px!important; }
+.fontS20 { font-size: 20px!important; }
+.fontS22 { font-size: 22px!important; }
+.fontS24 { font-size: 24px!important; }
+.fontS26 { font-size: 26px!important; }
+.fontS28 { font-size: 28px!important; }
+.fontS32 { font-size: 32px!important; }
+
+.colorbgError { background: #ed3f14!important;
+    &:hover { background: #EB6348!important;}
+}
+.colorError { color: #ed3f14!important;
+    &:hover { color: #EB6348!important;}
+}
+.colorDe { color: #A0A6B3!important;
+    &:hover { color: #ccc!important;}
+}
+.marTop_20 {margin-top:20px;}
+.marTop_25 {margin-top:25px;}
+
+.show {display:block!important;}
+.hidden {display: none!important;}
+.pull-left {float:left;}
+.pull-right {float:right;}
+
+.modal_pl_holder { height: 0!important; overflow: hidden;}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+// 重写iview
+th .ivu-table-cell {
+	font-size: toRem(32px);
+	padding: 0;
+}
+.ivu-table th {
+	text-align: center!important;
+}
+.ivu-table-cell {
+	padding: 0!important;
+	font-size: toRem(32px);
+	text-align: center!important;
+}
+.tabel-cell-selected {
+  color: #fff;
+  background: #dc9861!important;
+}
+.active-table-cell {
+	color: #fff;
+	background: #dc9861!important;
+}

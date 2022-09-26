@@ -1,0 +1,686 @@
+@charset "utf-8";
+
+@import './common/reset.scss';
+@import './_tool/_variable.scss';
+@import './_tool/_other.scss';
+@import './common/swiper.css';
+@import './common/common.scss';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+// 头部导航
+.header-bar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-wrap {
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+  }
+
+  .logo {
+    height: 80px;
+    width: 200px;
+    background: url(../images/session_imgs/logo.png) center no-repeat;
+    background-size: contain;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+
+    &-item {
+      margin-left: 10px;
+      font-size: 16px;
+      padding: 6px 15px;
+      border-radius: 20px;
+      color: #555;
+      cursor: pointer;
+      
+      &.active, &:hover {
+        background: #555;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// 首页
+.home-page {
+  .banner {
+    display: block;
+    height: 525px;
+    background: url(../images/session_imgs/banner.png) no-repeat top;
+    background-size: cover;
+    transition: all 1s;
+    transform: rotateY(180deg);
+
+    &.in {
+      transform: rotateY(0);
+    }
+  }
+
+  .special_title {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+
+    .in {
+      position: relative;
+      padding-bottom: 10px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 30px;
+        height: 1px;
+        background: #999;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .cartoon-wrap {
+    margin-top: 40px;
+
+    &_swiper {
+      position: relative;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .swiper-slide, .img {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        font-size: 14px;
+      }
+
+      .img {
+        display: block;
+        width: 100%;
+
+        &-1 {
+          background: url(../images/session_imgs/carton_1.jpg) no-repeat;
+          background-size: contain;
+        }
+
+        &-2 {
+          background: url(../images/session_imgs/carton_2.jpg) no-repeat;
+          background-size: contain;
+        }
+
+        &-3 {
+          background: url(../images/session_imgs/carton_3.jpg) no-repeat;
+          background-size: contain;
+        }
+
+        &-4 {
+          background: url(../images/session_imgs/carton_4.jpg) no-repeat;
+          background-size: contain;
+        }
+
+        &-5 {
+          background: url(../images/session_imgs/carton_5.jpg) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    .swiper-container {
+      width: 900px;
+      height: 300px;
+      color: #fff;
+      background: #222;
+      text-align: center;
+    }
+    .swiper-slide {
+      height: 100%;
+      opacity: 0.4;
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      color: #fff;
+    }
+    .swiper-slide-visible {
+      opacity: 0.5;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    .swiper-slide-active {
+      top: 0;
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+    .swiper-slide .title {
+      font-style: italic;
+    }
+    .pagination {
+      position: absolute;
+      z-index: 20;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      bottom: 5px;
+    }
+    .swiper-pagination-switch {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 8px;
+      background: #aaa;
+      margin-right: 8px;
+      cursor: pointer;
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+      opacity: 0;
+      position: relative;
+      top: -50px;
+    }
+    .swiper-visible-switch {
+      opacity: 1;
+      top: 0;
+      background: #aaa;
+    }
+    .swiper-active-switch {
+      background: #555;
+    }
+  }
+
+  .about-wrap {
+    margin-top: 40px;
+
+    .about-content {
+      margin-top: 40px;
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 48%;
+        
+        .title {
+          margin-bottom: 20px;
+          padding: 5px 20px;
+          color: #fff;
+          background: #555;
+          border-radius: 50px;
+        }
+
+        p {
+          width: 100%;
+          text-indent: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.bread-line {
+  position: relative;
+  height: 300px;
+  background: url(../images/session_imgs/breadline.jpeg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 40px;
+
+  .title {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    bottom: 50px;
+    padding: 20px;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.list-page {
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_item {
+      text-align: center;
+      margin-right: 20px;
+      margin-bottom: 30px;
+
+      .title {
+        padding: 10px;
+        font-size: 16px;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        .title {
+          color: #333;
+        }
+      }
+    }
+
+    .img {
+      width: 270px;
+      height: 300px;
+      display: block;
+  
+      &-1 {
+        background: url(../images/session_imgs/carton_1.jpg) no-repeat center #ddd;
+        background-size: contain;
+      }
+  
+      &-2 {
+        background: url(../images/session_imgs/carton_2.jpg) no-repeat center #ddd;
+        background-size: contain;
+      }
+  
+      &-3 {
+        background: url(../images/session_imgs/carton_3.jpg) no-repeat center #ddd;
+        background-size: contain;
+      }
+  
+      &-4 {
+        background: url(../images/session_imgs/carton_4.jpg) no-repeat center #ddd;
+        background-size: contain;
+      }
+  
+      &-5 {
+        background: url(../images/session_imgs/carton_5.jpg) no-repeat center #ddd;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.detail-page {
+  &_content {
+    .entry-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .entry-content {
+      width: 560px;
+      margin: auto;
+      font-size: 0;
+    }
+  }
+}
+
+.about-page {
+  .line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 40px;
+      background: #555;
+      color: #fff;
+      font-size: 16px;
+      margin-right: 40px;
+      border-radius: 20px;
+    }
+
+    .main {
+      flex: 1;
+      font-size: 14px;
+    }
+  }
+}
+
+// 底部
+.footer {
+  margin-top: 40px;
+  padding: 40px;
+  background: #555;
+  color: #fff;
+  text-align: center;
+
+  .name {
+    font-size: 20px;
+  }
+
+  .info {
+    padding: 5px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+// 注册
+.regBox {
+  margin: 40px auto;
+  border: #CCC solid 1px;
+  text-align: center;
+}
+
+.reg_item {
+  font: 14px/34px "宋体";
+  width: 85px;
+  text-align: right;
+  display: inline-block;
+}
+
+.reg_item i {
+  color: red;
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.input_item {
+  width: 340px;
+  display: inline-block;
+
+  &.code_input {
+    width: 160px;
+    margin-right: 18px;
+  }
+}
+
+.vCode {
+  display: inline-block;
+}
+
+.regBox {
+  background: #fff;
+}
+
+.regBox li {
+  height: 60px;
+  vertical-align: top;
+}
+
+.regBox .autoLogin {
+  height: 46px;
+  padding: 0;
+}
+
+.regBox .login_cont {
+  padding: 45px 76px 20px 76px;
+}
+
+.login_cont .resigter_btn {
+  width: 306px;
+  text-align: center;
+  line-height: 36px;
+  background: $clMain;
+  color: #fff;
+  font-size: 16px;
+}
+
+.loginBox .login_btn {
+  width: 309px;
+  height: 40px;
+  background: $clMain;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.login_partners {
+  padding-top: 34px;
+}
+
+.login_list li {
+  float: left;
+  line-height: 20px;
+}
+
+.login_list span {
+  color: #999;
+  margin: 0 2px;
+}
+
+.regBox {
+  margin: 40px auto;
+  border: #CCC solid 1px;
+  text-align: center;
+}
+
+.reg_item {
+  font: 14px/34px "宋体";
+  width: 85px;
+  text-align: right;
+  display: inline-block;
+}
+
+.reg_item i {
+  color: red;
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.input_item {
+  width: 340px;
+  display: inline-block;
+
+  &.code_input {
+    width: 160px;
+    margin-right: 18px;
+  }
+}
+
+.vCode {
+  display: inline-block;
+}
+
+.regBox {
+  background: #fff;
+}
+
+.regBox li {
+  height: 60px;
+  vertical-align: top;
+}
+
+.regBox .autoLogin {
+  height: 46px;
+  padding: 0;
+}
+
+.regBox .login_cont {
+  padding: 45px 76px 20px 76px;
+}
+
+.login_cont .resigter_btn {
+  width: 306px;
+  text-align: center;
+  line-height: 36px;
+  background: $clMain;
+  color: #fff;
+  font-size: 16px;
+}
+
+// 登录
+/*登陆*/
+.login_input {
+  border: #ccc solid 1px;
+  height: 32px;
+  line-height: 32px\9;
+  text-indent: 5px;
+  width: 100%;
+}
+
+.welcome_title {
+  font: 28px/85px "Microsoft YaHei", "微软雅黑";
+  color: #333;
+  float: left;
+  padding-left: 24px;
+}
+
+.loginBox {
+  width: 350px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 40px auto;
+  position: relative;
+  margin-right: 40px;
+}
+
+.login_con {
+  padding: 5px;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.login_cont {
+  padding: 35px 25px;
+  background: #fff;
+}
+
+.login_cont {
+  .to_cus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 12px;
+
+    a {
+      color: $clMain;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .mb_10 {
+    margin-bottom: 25px;
+  }
+}
+
+.comWidth {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 注册协议 */
+.for_agreement {
+  cursor: pointer;
+}
+
+.agreement {
+  position: absolute;
+  width: 800px;
+  top: 100px;
+  left: 50%;
+  margin-left: -400px;
+  background: #fff;
+  display: none;
+  z-index: 9;
+
+  .a_tp {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #e0e0e0;
+    font-size: 15px;
+    position: relative;
+
+    .closebtn {
+      font-size: 20px;
+      color: #555;
+      padding: 0 10px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px 40px;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  button {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: $clMain;
+    display: block;
+    margin: 20px auto 40px auto;
+    color: #fff;
+  }
+}
+
+/*公用*/
+.shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: 4;
+  display: none;
+}
+
+.line-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

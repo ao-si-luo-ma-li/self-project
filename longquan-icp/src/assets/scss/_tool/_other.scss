@@ -1,0 +1,22 @@
+@function cal($wid_1, $wid_2) {  
+  @return ($wid_1 / $wid_2) * 100%;  
+} 
+
+@mixin transitioned( $time:0.4s, $target:all) {
+	transition: $target $time;
+	-moz-transition: $target $time; /* Firefox 4 */
+	-webkit-transition: $target $time; /* Safari 和 Chrome */
+	-o-transition: $target $time; /* Opera */
+}
+
+@mixin disFlex($justType:space-between, $alignType:center) {
+	 display: flex;
+    justify-content: $justType;
+    flex-wrap: wrap;
+    align-items: $alignType;
+}
+
+@mixin opacityed($op) {
+	opacity: $op;
+	filter:alpha(opacity=$op*100);  
+}

@@ -1,0 +1,133 @@
+@import './common/common.scss';
+#main, .register_main {
+    background: #fff
+}
+.register_main {
+    padding: 36px 2.5%;
+    box-sizing: border-box;
+    margin: auto
+}
+.register_main .center {
+    background: #fff;
+    padding: 40px 0
+}
+.register_main .wel {
+    text-align: center;
+    margin-bottom: 10px
+}
+.register_main .wel .main_tip {
+    display: inline-block;
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px
+}
+.register_main .wel i {
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 12px
+}
+.register_main .form {
+    width: 550px;
+    padding: 50px 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto
+}
+.register_main .form .line {
+    margin-bottom: 15px
+}
+.register_main .form .title {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    padding-right: 15px;
+    text-align: right;
+    line-height: 34px;
+    min-height: 1px;
+    box-sizing: border-box
+}
+.register_main .form input {
+    display: inline-block;
+    width: 72%;
+    height: 34px;
+    padding: 0 10px;
+    border-color: #999;
+    box-shadow: inset 0 0 4px .5px #bbb;
+    box-sizing: border-box
+}
+.register_main .form input:focus, .register_main .form input:hover {
+    box-shadow: inset 0 0 4px .7px #999
+}
+.register_main .form input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+    border-radius: 4px;
+    vertical-align: middle
+}
+.register_main .form .tip {
+    width: 100%;
+    display: block;
+    padding-left: 21%;
+    text-align: left;
+    line-height: 34px;
+    color: #cf1132;
+    font-size: 12px;
+    box-sizing: border-box
+}
+.register_main .form .to_submit p a {
+    color: #cf1132
+}
+.register_main .form .to_submit .readMore p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px
+}
+.register_main .form .to_submit .submit {
+    display: block;
+    width: 200px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 54px;
+    text-align: center;
+    background: #cf1132;
+    color: #fff;
+    margin: auto;
+    margin-top: 40px
+}
+.register_main .choseContent:after {
+    content: \\"\\";
+    position: absolute;
+    right: 0;
+    top: -40px;
+    height: 100%;
+    width: 1px;
+    background: #ddd
+}
+.register_main .choseContent .typeContent {
+    display: none
+}
+.register_main .choseContent .typeContent:first-child {
+    display: block
+}
+.register_main .choseType {
+    padding-left: 20px;
+    box-sizing: border-box
+}
+.register_main .choseType ul li {
+    color: #444;
+    display: none
+}
+.register_main .choseType ul li:first-child {
+    display: block
+}
+.register_main .choseType ul li p {
+    display: inline-block;
+    margin-right: 10px
+}
+.register_main .choseType ul li a {
+    color: #cf1132
+}

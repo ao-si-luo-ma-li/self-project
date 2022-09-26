@@ -1,0 +1,116 @@
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td{margin:0;padding:0}
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {  -ms-text-size-adjust: 100%;  -webkit-text-size-adjust: 100%; }
+
+/* 要注意表单元素并不继承父级 font 的问题。用于移动端，与rem适配 */
+body,button,input,select,textarea {
+    font: 62.5%/2 Microsoft YaHei,'YaHei',tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+}
+
+/* 解决长串英文字母显示不能自动换行 */
+* {word-wrap:break-word;word-break:break-all;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {  display: block;}
+button,input,optgroup,select,textarea {  color: inherit;  font: inherit;  margin: 0;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {  -webkit-appearance: button;  cursor: pointer; border: none; background: none;}
+body { line-height: 1.5;  overflow-x: hidden;  -webkit-overflow-scrolling: touch;}
+img {  border: 0;  vertical-align: middle;}
+a {  background: transparent;  text-decoration: none;  -webkit-tap-highlight-color: transparent;  color: #3696F1;}
+a:active {  outline: 0;}
+input {  line-height: normal; border: none; padding: 0;}
+input:focus {  outline: 0 none;}
+table {  border-collapse: collapse;  border-spacing: 0;}
+input::-moz-placeholder,textarea::-moz-placeholder {  color: #ccc;}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {  color: #ccc;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {  color: #ccc;}
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+ input,textarea,button{appearance:none;-webkit-appearance:none;-moz-appearance:none;}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+}
+button {
+    padding:0;
+    border:none;
+    outline: none;
+}
+/* 去掉列表前的标识, li 会继承 */
+ul, ol ,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img { max-width: 100%; max-height: 100%;}
+body {
+    min-width: 100%;
+    display: block!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+    text-align: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// 根节点字体大小.根据不同尺寸响应。适用于移动端
+@media only screen and (max-width: 359px) {
+    html {
+        font-size:12px
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width:374px) {
+    html {
+        font-size:13.5px
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:399px) {
+    html {
+        font-size:14.0625px
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width:479px) {
+    html {
+        font-size:15px
+    }
+}
+
+@media only screen and (max-width: 539px) and (min-width: 480px) {
+    html {
+        font-size:18px
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width:639px) {
+    html {
+        font-size:20.25px
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width:719px) {
+    html {
+        font-size:24px
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width:749px) {
+    html {
+        font-size:27px
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size:28.125px
+    }
+}

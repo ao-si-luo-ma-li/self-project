@@ -1,0 +1,18 @@
+#tip-404 {
+  height: 100vh;
+  text-align: center;
+}
+#tip-404::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+#tip-404 p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 36px;
+  color: #888;
+}

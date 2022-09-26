@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单核对</title>
+</head>
+
+<body style="display: none;">
+<div class="headerBar">
+	<div class="topBar">
+		<div class="comWidth">
+			<div class="rightArea">
+				欢迎来到熬龙电子商务平台！<a href="#">[登录]</a><a href="#">[免费注册]</a>
+			</div>
+		</div>
+	</div>
+	<div class="logoBar">
+		<div class="comWidth">
+			<div class="logo fl">
+				<a href="./index.html"><img src="../assets/images/logo.png" alt=""></a>
+			</div>
+			<div class="stepBox fr">
+				<ul class="step_progress clearfix">
+					<li class="s01 active"><span>1</span></li>
+					<li class="s02 active"><span>2</span></li>
+					<li class="s03"><span>3</span></li>
+				</ul>
+				<ul class="step_text clearfix">
+					<li class="s01 active">我的购物车</li>
+					<li class="s02 active">填写核对订单</li>
+					<li class="s03">订单提交成功</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="shoppingCart comWidth">
+	<div class="shopping_item">
+		<h3 class="shopping_tit">收货地址</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><span class="shopping_list_text"><em>*</em>填写省份：</span>
+					<input type="text" placeholder="省份或直辖市" class="input input_b send_loc_1">
+					<!-- <div class="select">
+						<h3>海淀区五环内</h3><span></span>
+						<ul class="show_select">
+							<li>上帝</li>
+							<li>五道口</li>
+							<li>上帝</li>
+						</ul>
+					</div> -->
+				</li>
+				<li><span class="shopping_list_text"><em>*</em>详细地址：</span><input type="text" placeholder="填写尽可能详细的地址" class="input input_b send_loc_2"></li>
+				<li><span class="shopping_list_text"><em>*</em>收 货 人：</span><input type="text" placeholder="填写真实姓名" class="input send_per"></li>
+				<li><span class="shopping_list_text"><em>*</em>手	机：</span><input type="text" placeholder="如：12312312" class="input send_mobile"><span class="cart_tel">&nbsp;或固定电话：</span><input type="text" class="input input_s"><span class="jian">-</span><input type="text" class="input input_s2"><span class="jian">-</span><input type="text" class="input input_s2"></li>
+				<li><input type="button" class="affirm"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">支付方式</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><input type="radio" class="radio" id="r1" name="pay_type" checked value="支付宝支付"><label for="r1">支付宝支付</label></li>
+				<li><input type="radio" class="radio" id="r2" name="pay_type" value="微信支付"><label for="r2">微信支付</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">送货清单<a href="./cart.html" class="backCar">返回购物车修改</a></h3>
+		<div class="shopping_cont pb_10">
+			<div class="cart_inner">
+				<div class="cart_head clearfix">
+					<div class="cart_item t_name">商品名称</div>
+					<div class="cart_item t_price">单价</div>
+					<div class="cart_item t_return">状态</div>
+					<div class="cart_item t_num">数量</div>
+					<div class="cart_item t_subtotal">小计</div>
+				</div>
+				<div class="cartlist-inner">
+					<div class="cart_cont clearfix">
+						<div class="cart_item t_name">
+							<div class="cart_shopInfo clearfix">
+								<img src="../assets/images/des_sm.jpg" alt="">
+								<div class="cart_shopInfo_cont">
+									<p class="cart_link"><a href="#">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="cart_item t_price">
+							asdfa
+						</div>
+						<div class="cart_item t_return">有货</div>
+						<div class="cart_item t_num">x1</div>
+						<div class="cart_item t_subtotal t_red">小计</div>
+						<div class="cart_item to_modify">移除</div>
+					</div>
+					<div class="cart_cont clearfix">
+						<div class="cart_item t_name">
+							<div class="cart_shopInfo clearfix">
+								<img src="../assets/images/des_sm.jpg" alt="">
+								<div class="cart_shopInfo_cont">
+									<p class="cart_link"><a href="#">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="cart_item t_price">
+							asdfa
+						</div>
+						<div class="cart_item t_return">有货</div>
+						<div class="cart_item t_num">x1</div>
+						<div class="cart_item t_subtotal t_red">小计</div>
+						<div class="cart_item to_modify">移除</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart_message">
+				若有问题请留言
+				<textarea name="" id=""></textarea>
+			</div>
+			<div class="cart_sendType">
+				配送方式
+				<span>普通快递</span>
+			</div>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">发票信息</h3>
+		<div class="shopping_cont padding_shop clearfix">
+			<div class="cart_count fl">
+				<div class="cart_rmb">
+					<i>普通纸质发票</i>
+					<a href="javascript:void(0)" class="change-bill">修改</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">订单结算</h3>
+		<div class="shopping_cont padding_shop clearfix">
+			<div class="cart_count fr">
+				<div class="cart_rmb">
+					<i>总计：</i><span id="total_money">￥145000009.00</span>
+				</div>
+				<div class="cart_btnBox">
+					<input type="button" class="cart_btn to-pay" value="提交订单">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hr_25"></div>
+<div class="footer">
+	<div class="slogan">
+		<div class="comWidth">
+			<div class="slo-contain">
+				<div class="slo-item">
+					<span class="f-icon icon_zp"></span>
+					<span class="slo_tit">100%正品</span>
+				</div>
+				<div class="slo-item">
+					<span class="f-icon icon_js"></span>
+					<span class="slo_tit">极速配送</span>
+				</div>
+				<div class="slo-item">
+					<span class="f-icon icon_sh"></span>
+					<span class="slo_tit">售后无忧</span>
+				</div>
+				<div class="slo-item">
+					<span class="f-icon icon_zf"></span>
+					<span class="slo_tit">厂家直发</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="service comWidth">
+		<ul>
+			<li>
+				<dt>购物指南</dt>
+				<dd><a href="./help.html?help-re">免费注册</a></dd>
+				<dd><a href="./help.html?help-dg">导购流程</a></dd>
+				<dd><a href="./help.html?help-qu">常见问题</a></dd>
+			</li>
+			<li>
+				<dt>支付方式</dt>
+				<dd><a href="./help.html?help-zfb">支付宝支付</a></dd>
+				<dd><a href="./help.html?help-wx">微信支付</a></dd>
+			</li>
+			<li>
+				<dt>物流服务</dt>
+				<dd><a href="./help.html?help-fh">发货流程</a></dd>
+				<dd><a href="./help.html?help-wl">物流查询</a></dd>
+				<dd><a href="./help.html?help-zf">资费标准</a></dd>
+			</li>
+			<li>
+				<dt>售后服务</dt>
+				<dd><a href="./help.html?help-zp">正品承诺</a></dd>
+				<dd><a href="./help.html?help-th">退换货政策</a></dd>
+				<dd><a href="./help.html?help-kf">联系客服</a></dd>
+			</li>
+			<li>
+				<dt>了解我们</dt>
+				<dd><a href="./help.html?help-us">关于我们</a></dd>
+				<dd><a href="./parter.html" target="_blank">招商合作</a></dd>
+				<dd><a href="./parter_guide.html" target="_blank">入驻流程</a></dd>
+				<dd><a href="./help.html?help-zz">资费细则</a></dd>
+			</li>
+		</ul>
+	</div>
+	<div class="copyRight">
+		<p><a href="http://www.miibeian.gov.cn" target="_blank">沪ICP备17043864号</a><span>公司电话：021-63251030</span></p>
+		<p class="com_loc">公司地址：上海市浦东新区峨山路505号东方纯一大厦1602室</p>
+		<p>Copyright © 2017－2019 上海熬龙信息技术有限公司 版权所有</p><p><a href="http://shcainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">增值电信业务经营许可证：沪B2-20180015</a></p>
+	</div>
+	
+</div>
+</body>
+</html>

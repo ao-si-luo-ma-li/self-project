@@ -1,0 +1,19 @@
+/*
+	# 提交 mutation 是更改状态的唯一方法，并且这个过程是同步的。
+	# 根级别的 mutation
+*/
+export const CRE_NAV_CHANGE = 'CRE_NAV_CHANGE'
+export const FIND_POST_DE = 'FIND_POST_DE'
+export const CREDIT_ORDER_BANK = 'CREDIT_ORDER_BANK'
+export const CREDIT_ORDER_BASIC = 'CREDIT_ORDER_BASIC'
+export const CREDIT_ORDER_WORK = 'CREDIT_ORDER_WORK'
+export const CREDIT_ORDER_CURAREA = 'CREDIT_ORDER_CURAREA'
+export const CREDIT_ORDER_CPLOC = 'CREDIT_ORDER_CPLOC'
+export const CREDIT_ORDER_PERSONINFO = 'CREDIT_ORDER_PERSONINFO'
+export const GET_LOCATION = 'GET_LOCATION'
+export const AlREADY_GET_LOCATION = 'AlREADY_GET_LOCATION'
+
+// 用作hack
+export const HACK_HOME_PAGE = 'HACK_HOME_PAGE'
+export const HACK_FROM_CREORDER = 'HACK_FROM_CREORDER'
+export const HACK_CREDITDOOR = 'HACK_CREDITDOOR'

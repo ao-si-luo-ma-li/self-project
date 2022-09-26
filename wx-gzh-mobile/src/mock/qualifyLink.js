@@ -1,0 +1,17 @@
+export const qualifyLink = {
+  guangbo: '/dist/static/files/qualify-guangbo.pdf',
+  game: '/dist/static/files/qualify-game.pdf',
+  b1_idc: '/dist/static/files/b1_idc.doc',
+  b1_cdn: '/dist/static/files/b1_cdn.doc',
+  b1_ipvpn: '/dist/static/files/b1_ipvpn.doc',
+  b1_ipvpn: '/dist/static/files/b1_ipvpn.doc',
+  b1_isp: '/dist/static/files/b1_isp.doc',
+  b2_cunchu: '/dist/static/files/b2_cunchu.doc',
+  b2_edi_nei: '/dist/static/files/b2_edi_nei.doc',
+  b2_edi_wai: '/dist/static/files/b2_edi_wai.docx',
+  b2_guonei: '/dist/static/files/b2_guonei.doc',
+  b2_hujiao: '/dist/static/files/b2_hujiao.doc',
+  b2_icp_nei: '/dist/static/files/b2_icp_nei.doc',
+  b2_icp_wai: '/dist/static/files/b2_icp_wai.docx',
+  b2_sp: '/dist/static/files/b2_sp.doc',
+};

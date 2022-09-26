@@ -1,0 +1,25 @@
+@import './common/common.scss';
+.bg-center {
+    background: #000;
+    background-size: cover;
+    margin: auto;
+    position: relative
+}
+.bg-center .main-content {
+    padding: 36px 2.5%;
+    background: #fff;
+    box-sizing: border-box
+}
+.bg-center .a_content h5 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px
+}
+.bg-center .a_content p {
+    color: #666;
+    text-indent: 25px;
+    line-height: 24px
+}
+.bg-center .a_content p b {
+    color: #222
+}

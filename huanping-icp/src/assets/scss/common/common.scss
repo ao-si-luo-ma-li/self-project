@@ -1,0 +1,58 @@
+@import '../_tool/_variable.scss';
+@import '../_tool/_other.scss';
+
+.copyRight {
+	padding: 20px 0;
+	text-align: center;
+	span {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.company-name {
+		padding: 20px 0;
+		font-size: 20px;
+	}
+}
+.footer {background: #f0f0f0!important;}
+.footer i{font-style:normal; margin:0 5px;}
+.footer a{color:#333;}
+.footer a:hover{color:$clMain;}
+
+// 退出登录
+.login-out {
+	font-size: 12px;
+		display: inline-block;
+		padding: 0 10px;
+		color: #3f3f3f;
+		line-height: 21px;
+	i {
+		width: 17px;
+		height: 16px;
+		margin-right: 5px;
+		margin-top: 1px;
+		display: inline-block;
+		vertical-align: top;
+		transition: transform .5s;
+	    -moz-transition: -moz-transform .5s;
+	    -webkit-transition: -webkit-transform .5s;
+	    -o-transition: -o-transform .5s;
+	    // background: url('../images/lg.png') no-repeat center;
+		background-size: contain;
+	}
+}
+
+/*公用*/
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	z-index: 4;
+	display: none;
+}
+.comWidth{width:1000px; margin-left:auto; margin-right:auto;}
+.hide{display:none;}
+.show{display:block;}
