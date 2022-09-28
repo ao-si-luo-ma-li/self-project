@@ -2,6 +2,7 @@
 # package-lock.json
 
 **/build
+**/dist
 *.zip
 
 **/.DS_Store
