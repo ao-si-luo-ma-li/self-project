@@ -49,6 +49,7 @@ import Contract from '@/views/contract/view';
 
 import QualifyArtRd from '@/views/rd/artRD';
 import QualifyTestRd from '@/views/rd/testRD';
+import Blank from '@/views/blank';
 
 const router = new Router({
   scrollBehavior(to, from, savedPosition) {
@@ -339,6 +340,14 @@ const router = new Router({
       name: 'test-rd',
       meta: {
         title: '测试外包',
+      },
+    },
+    {
+      path: '/blank',
+      component: Blank,
+      name: 'blank',
+      meta: {
+        title: '即将跳转',
       },
     },
   ],
