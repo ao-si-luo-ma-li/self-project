@@ -18,6 +18,20 @@
           <span v-html="item"></span>
         </li>
       </ol>
+
+      <ol v-if="docDetailDo.tips_other" style="width: 100%">
+        <li v-for="item in docDetailDo.tips_other" :key="item">
+          <ol class="content-text other">
+            <li
+              class="content-text_item"
+              v-for="in_item in item"
+              :key="in_item"
+            >
+              <span v-html="in_item"></span>
+            </li>
+          </ol>
+        </li>
+      </ol>
     </div>
   </div>
 </template>
@@ -40,6 +54,7 @@ export default {
       ...this.docDetail,
       tips: this.docDetail.tips.map(item => item.replace(/[0-9]\./gi, '')),
     };
+    console.log('this.docDetailDo', this.docDetailDo);
     this.isWW =
       isWenWangWen
         .map(wwSrc => wwSrc.split('_')[1])
