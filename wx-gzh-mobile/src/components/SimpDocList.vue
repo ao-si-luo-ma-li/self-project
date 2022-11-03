@@ -9,7 +9,7 @@
         <img :src="action1" alt="" srcset="" class="action action-1" />
       </div>
 
-      <ol class="content-text">
+      <ol class="content-text" style="width: 100%">
         <li
           v-for="item in docDetailDo.tips"
           :key="item"
