@@ -81,19 +81,16 @@ const insertNavBarForFullScreen = () => {
     $(dom).append(
       `
       <div class="download-pcbtn-box">
-        <div class="down-pcbtn ${i === 0 ? 'active': ''}" dataset="0" id="0">
+        <div class="down-pcbtn ${i === 0 ? 'active': ''}" dataset="0" id="1">
           首页
         </div>
-        <div class="down-pcbtn ${i === 1 ? 'active': ''}" dataset="1" id="1">
-          才艺展示区
+        <div class="down-pcbtn ${i === 1 ? 'active': ''}" dataset="1" id="2">
+          视频观看区
         </div>
-        <div class="down-pcbtn ${i === 2 ? 'active': ''}" dataset="2" id="2">
-          公司简介
+        <div class="down-pcbtn ${i === 2 ? 'active': ''}" dataset="2" id="3">
+          公司里程碑
         </div>
-        <div class="down-pcbtn ${i === 3 ? 'active': ''}" dataset="3" id="3">
-          独家资讯
-        </div>
-        <div class="down-pcbtn ${i === 4 ? 'active': ''}" dataset="4" id="4">
+        <div class="down-pcbtn ${i === 3 ? 'active': ''}" dataset="4" id="4">
           联系合作
         </div>
         <a href="./pay.html" class="down-pcbtn ${i === 5 ? 'active': ''}" dataset="5" id="5">
@@ -104,7 +101,7 @@ const insertNavBarForFullScreen = () => {
     );
 
     $('.down-pcbtn').on('click', e => {
-      myFullpage.moveTo(Number(e.target.id) + 1)
+      myFullpage.moveTo(Number(e.target.id))
     })
 
     $('.goTop').on('click', () => {
@@ -119,6 +116,10 @@ const insertNavBarForFullScreen = () => {
       e.preventDefault()
       mySwiper.swipeNext()
     })
+    $('.repeat-watch').on('click', function(e) {
+      e.preventDefault()
+      mySwiper.swipePrev()
+    })
   });
 
   // 才艺展示区视频轮播
@@ -131,11 +132,13 @@ const insertNavBarForFullScreen = () => {
   });
 
   // 视频
-  dplayerFn('dplayer1', '/static/video/ttg/ttq.m3u8')
-  dplayerFn('dplayer2', '/static/video/tg2/tg2/tq.m3u8')
-  dplayerFn('dplayer3', '/static/video/jt/jt.m3u8')
-  dplayerFn('dplayer4', '/static/video/sg/sg.m3u8')
-  dplayerFn('dplayer5', '/static/video/ss/ss.m3u8')
+  dplayerFn('dplayer1', 'static/video/ttg/ttq.m3u8')
+  dplayerFn('dplayer2', 'static/video/tg2/tg2/tq.m3u8')
+  dplayerFn('dplayer3', 'static/video/jt/jt.m3u8')
+  dplayerFn('dplayer4', 'static/video/sg/sg.m3u8')
+  dplayerFn('dplayer5', 'static/video/ss/ss.m3u8')
+  dplayerFn('dplayer6', 'static/video/hp/hp.m3u8')
+  dplayerFn('dplayer7', 'static/video/zz/zz.m3u8')
 }
 
 insertNavBarForFullScreen()

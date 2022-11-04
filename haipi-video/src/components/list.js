@@ -26,3 +26,7 @@ $('.for_agreement').click(function() {
   $('.shadow').show();
   $('.agreement').show();
 });
+
+$('.pay-now').on('click', function(e) {
+  confirm('网站还在进行部分升级，请联系客服电话 13764637130')
+})
