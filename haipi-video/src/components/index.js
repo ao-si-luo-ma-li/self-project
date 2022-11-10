@@ -4,6 +4,8 @@ import './common/nav.js';
 import '../assets/scss/main.scss';
 import fullpage from '../lib/fullpage'
 import { dplayerFn } from './video';
+import { getCookie, setCookie } from './common/common';
+const util = require('./common/common.js');
 const Swiper = require('../lib/swiper')
 
 // 启用全屏滚动插件
@@ -96,12 +98,36 @@ const insertNavBarForFullScreen = () => {
         <a href="./pay.html" class="down-pcbtn ${i === 5 ? 'active': ''}" dataset="5" id="5">
           快速充值
         </a>
+        <a href="javascript:void(0)" class="down-pcbtn">
+          <div class="login-out">
+            
+          </div>
+        </a>
       </div>
       `
     );
 
+    const username = getCookie('username');
+    if (username) {
+      $('.login-out').html(`登出 <span class="login-out_welcome">欢迎您，${username}</span>`)
+    } else {
+      $('.login-out').html('登录/注册')
+    }
+
+    $('.login-out').on('click', (e) => {
+      if (username) {
+        setCookie('name', '');
+        window.location.reload()
+      } else {
+        window.location.href = `https://hepai.video/login?redirectUrl=${encodeURIComponent(window.location.href)}`
+        e.stopPropagation()
+      }
+    })
+
     $('.down-pcbtn').on('click', e => {
-      myFullpage.moveTo(Number(e.target.id))
+      if (e.target.id) {
+        myFullpage.moveTo(Number(e.target.id))
+      }
     })
 
     $('.goTop').on('click', () => {
@@ -142,3 +168,16 @@ const insertNavBarForFullScreen = () => {
 }
 
 insertNavBarForFullScreen()
+
+    
+/**
+ * @description 通过url设置用户名
+ */
+function setCookieByUrl() {
+  const {searchParams} =  new URL(window.location.href)
+  const _username = decodeURIComponent(searchParams.get('username') || '')
+  if (!_username) return
+  util.setCookie('username', _username);
+  window.location.replace('./index.html')
+}
+setCookieByUrl()
