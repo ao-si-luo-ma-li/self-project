@@ -143,8 +143,8 @@ const insertNavBarForFullScreen = () => {
       mySwiper.swipeNext()
     })
     $('.repeat-watch').on('click', function(e) {
+      window.location.href = 'http://www.lq399.com/video/index.html'
       e.preventDefault()
-      mySwiper.swipePrev()
     })
   });
 
