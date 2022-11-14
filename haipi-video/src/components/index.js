@@ -119,7 +119,7 @@ const insertNavBarForFullScreen = () => {
         setCookie('name', '');
         window.location.reload()
       } else {
-        window.location.href = `https://hepai.video/login?redirectUrl=${encodeURIComponent(window.location.href)}`
+        window.location.href = `https://hepai.video/login?isAuthLogin=1&redir=${encodeURIComponent(window.location.href)}`
         e.stopPropagation()
       }
     })
